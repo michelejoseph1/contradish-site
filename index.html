@@ -6,37 +6,16 @@
   <title>Contradish | The Contradiction Benchmark for AI</title>
   <meta name="description" content="Contradish measures contradiction risk in AI with contradiction density, entropy, and coherence delta. A neutral benchmark and audit standard." />
   <link rel="canonical" href="https://contradish.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Contradish | The Contradiction Benchmark for AI" />
-  <meta property="og:description" content="Neutral benchmark and audit standard for contradiction risk." />
-  <meta property="og:url" content="https://contradish.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://contradish.com/favicon.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Contradish",
-    "url":"https://contradish.com",
-    "logo":"https://contradish.com/favicon.svg",
-    "sameAs":[ "https://github.com/michelejoseph1" ]
-  }
-  </script>
-
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="site-header container">
-    <a class="brand" href="#top" aria-label="Contradish home">
+    <a class="brand" href="#top">
       <img src="/favicon.svg" alt="" class="logo" />
       <span>Contradish</span>
     </a>
-    <nav class="site-nav" aria-label="Primary">
+    <nav class="site-nav">
       <a href="#index">Index</a>
       <a href="#why">Why</a>
       <a href="#metrics">Metrics</a>
@@ -62,12 +41,35 @@
     <p class="muted">One view that compares models on contradiction risk. Lower is better.</p>
     <div class="table">
       <div class="t-row t-head">
-        <div>Model</div><div>Risk</div><div>Contradiction density</div><div>Status</div>
+        <div>Model</div>
+        <div>Risk</div>
+        <div>Contradiction density</div>
+        <div>Status</div>
       </div>
-      <div class="t-row"><div>GPT-4</div><div><span class="pill tone-1">Low</span></div><div>2.3%</div><div>Preview</div></div>
-      <div class="t-row"><div>Claude-3.5</div><div><span class="pill tone-1">Low</span></div><div>2.7%</div><div>Preview</div></div>
-      <div class="t-row"><div>Gemini Pro</div><div><span class="pill tone-2">Medium</span></div><div>4.1%</div><div>Preview</div></div>
-      <div class="t-row"><div>LLaMA-3</div><div><span class="pill tone-2">Medium</span></div><div>5.2%</div><div>Preview</div></div>
+      <div class="t-row">
+        <div>GPT-4</div>
+        <div class="risk">Low</div>
+        <div>2.3%</div>
+        <div>Preview</div>
+      </div>
+      <div class="t-row">
+        <div>Claude-3.5</div>
+        <div class="risk">Low</div>
+        <div>2.7%</div>
+        <div>Preview</div>
+      </div>
+      <div class="t-row">
+        <div>Gemini Pro</div>
+        <div class="risk">Medium</div>
+        <div>4.1%</div>
+        <div>Preview</div>
+      </div>
+      <div class="t-row">
+        <div>LLaMA-3</div>
+        <div class="risk">Medium</div>
+        <div>5.2%</div>
+        <div>Preview</div>
+      </div>
     </div>
     <p class="fine">Method preview only. Full Index v0.1 will include datasets, confidence intervals, and version tracking.</p>
   </section>
@@ -76,7 +78,7 @@
     <div>
       <h2>Why teams use Contradish</h2>
       <ul class="list">
-        <li><strong>Risk and compliance.</strong> A higher density of contradictions signals liability and instability.</li>
+        <li><strong>Risk and compliance.</strong> Higher contradiction density signals liability and instability.</li>
         <li><strong>External standard.</strong> A neutral score carries more weight than self reports.</li>
         <li><strong>Comparability.</strong> Track releases and compare against peers with one scale.</li>
         <li><strong>Actionable output.</strong> Maps show where contradictions cluster across prompts and policies.</li>
