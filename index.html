@@ -1,11 +1,188 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Contradish — The Contradiction Benchmark</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Contradish — The Contradiction Benchmark for AI & Enterprises</title>
+  <meta name="description" content="Contradish measures contradiction risk in AI systems using contradiction density, entropy, and coherence delta. A neutral, external benchmark and audit standard." />
+  <link rel="canonical" href="https://contradish.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Contradish — The Contradiction Benchmark" />
+  <meta property="og:description" content="External, neutral contradiction benchmark and audit standard for AI & enterprises." />
+  <meta property="og:url" content="https://contradish.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://contradish.com/favicon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema.org (Organization + Product) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Contradish",
+    "url":"https://contradish.com",
+    "logo":"https://contradish.com/favicon.svg",
+    "sameAs":[ "https://github.com/michelejoseph1" ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"Contradish — Contradiction Benchmark",
+    "about":[ "contradiction density", "contradiction entropy", "coherence delta", "compression-aware intelligence" ],
+    "author":{"@type":"Person","name":"Michele Joseph"}
+  }
+  </script>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <h1>Contradish</h1>
-  <p>The Contradiction Benchmark for AI & Enterprises.</p>
-  <p>Contradictions are the hidden risk behind hallucinations, misalignment, and compliance failures. Contradish measures and certifies them.</p>
+  <header class="site-header container">
+    <a class="brand" href="#top" aria-label="Contradish home">
+      <img src="/favicon.svg" alt="" class="logo" />
+      <span>Contradish</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#index">Index</a>
+      <a href="#why">Why</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#cai">CAI</a>
+      <a href="#faq">FAQ</a>
+      <a class="button" href="#join">Join</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero container">
+    <h1>The Contradiction Benchmark for AI & Enterprises</h1>
+    <p class="lede">
+      Contradictions are the hidden risk behind hallucinations, misalignment, and compliance failures.
+      <strong>Contradish</strong> provides a neutral, external benchmark so teams can measure, compare, and certify consistency.
+    </p>
+    <div class="cta-row">
+      <a class="button" href="#index">View Index Preview</a>
+      <a class="button ghost" href="#join">Join the Waitlist</a>
+    </div>
+  </section>
+
+  <!-- Index teaser -->
+  <section id="index" class="section container">
+    <h2>Contradish Index · Preview</h2>
+    <p class="muted">We benchmark leading models on <em>Contradiction Risk Score</em>. Lower = more stable. (Preview values shown.)</p>
+    <div class="table">
+      <div class="t-row t-head">
+        <div>Model</div><div>Risk</div><div>Contradiction Density</div><div>Status</div>
+      </div>
+      <div class="t-row"><div>GPT-4</div><div><span class="pill low">Low</span></div><div>2.3%</div><div>Preview</div></div>
+      <div class="t-row"><div>Claude-3.5</div><div><span class="pill low">Low</span></div><div>2.7%</div><div>Preview</div></div>
+      <div class="t-row"><div>Gemini Pro</div><div><span class="pill med">Medium</span></div><div>4.1%</div><div>Preview</div></div>
+      <div class="t-row"><div>LLaMA-3</div><div><span class="pill med">Medium</span></div><div>5.2%</div><div>Preview</div></div>
+    </div>
+    <p class="fine">Methodology: disagreement-aware NLI calibration + adversarial & heuristic stress tests. Full Index v0.1 coming soon.</p>
+  </section>
+
+  <!-- Why it matters -->
+  <section id="why" class="section container grid">
+    <div>
+      <h2>Why Contradish</h2>
+      <p class="muted">Not sales—just clarity on value.</p>
+      <ul class="list">
+        <li><strong>Risk & Liability:</strong> higher contradictions correlate with instability, hallucinations, and policy breaches.</li>
+        <li><strong>External Standard:</strong> third-party, reproducible scoring beats self-reported claims.</li>
+        <li><strong>Comparable:</strong> track model stability over time and against peers.</li>
+        <li><strong>Actionable:</strong> contradiction maps highlight <em>where</em> failure modes live in prompts, policies, or domains.</li>
+      </ul>
+    </div>
+    <aside class="card">
+      <h3>Where teams use it</h3>
+      <ul class="list compact">
+        <li>AI labs — release gating & regression checks</li>
+        <li>Enterprises — policy/compliance audit trails</li>
+        <li>Legal/health — requirement & documentation consistency</li>
+        <li>Research — standard citations for contradiction risk</li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- Metrics -->
+  <section id="metrics" class="section container">
+    <h2>What we measure</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Contradiction Density (CD)</h3>
+        <p>Share of evaluated outputs that contain A vs ¬A conflicts under a reference oracle. Lower is better.</p>
+      </article>
+      <article class="card">
+        <h3>Contradiction Entropy (CE)</h3>
+        <p>Disagreement across annotators/models. High CE means uncertainty clusters—useful for risk triage.</p>
+      </article>
+      <article class="card">
+        <h3>Coherence Delta (ΔC)</h3>
+        <p>Gap between a model’s reasoning and its final answer. Large ΔC signals fragile explanations.</p>
+      </article>
+    </div>
+    <p class="fine">We combine disagreement-aware scoring, adversarial rounds, and heuristic stress tests into a single, reproducible risk score.</p>
+  </section>
+
+  <!-- CAI + contradiction compression -->
+  <section id="cai" class="section container grid">
+    <div>
+      <h2>Compression-Aware Intelligence (CAI)</h2>
+      <p><strong>Definition:</strong> CAI is the practice of modeling intelligence as <em>compression under constraints</em>—systems are judged by how consistently they compress information without producing contradictions.</p>
+      <p>In CAI, contradictions are not noise; they are signals that compression failed or two constraints are at odds. Measuring those signals improves safety, clarity, and reliability.</p>
+    </div>
+    <aside class="card">
+      <h3>Contradiction Compression</h3>
+      <p>Many real problems are pairs of opposing demands (A, ¬A). <em>Contradiction compression</em> is the process of resolving those demands with minimal information loss. Contradish quantifies how well a system compresses contradictions across prompts, policies, and domains.</p>
+    </aside>
+  </section>
+
+  <!-- Join -->
+  <section id="join" class="section container">
+    <h2>Be part of the standard</h2>
+    <p class="muted">Get the Index preview and updates. No spam.</p>
+    <form class="form" action="https://formspree.io/f/your-id" method="POST">
+      <label>
+        <span class="label">Name</span>
+        <input name="name" type="text" placeholder="Full name" required />
+      </label>
+      <label>
+        <span class="label">Work email</span>
+        <input name="email" type="email" placeholder="you@company.com" required />
+      </label>
+      <button class="button" type="submit">Join the Waitlist</button>
+    </form>
+    <p class="fine">By submitting, you agree to be contacted about Contradish updates.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is this just another accuracy metric?</summary>
+      <p>No. Accuracy plateaus hide instability. Contradiction metrics expose consistency and policy alignment—what enterprises and regulators actually need.</p>
+    </details>
+    <details>
+      <summary>Why a neutral benchmark?</summary>
+      <p>Self-reported scores lack credibility. External, reproducible scoring creates trust with stakeholders and customers.</p>
+    </details>
+    <details>
+      <summary>Can we use our private data?</summary>
+      <p>Yes. Audits can run locally or with strict deletion SLAs; public Index uses open test sets.</p>
+    </details>
+  </section>
+
+  <footer class="site-footer container">
+    <p class="muted">© <span id="y"></span> Contradish — The Contradiction Benchmark</p>
+    <p><a href="mailto:hello@contradish.com">hello@contradish.com</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
