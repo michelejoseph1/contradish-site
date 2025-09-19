@@ -11,11 +11,11 @@
 </head>
 <body>
   <header class="site-header container">
-    <a class="brand" href="#top">
+    <a class="brand" href="#top" aria-label="Contradish home">
       <img src="/favicon.svg" alt="" class="logo" />
       <span>Contradish</span>
     </a>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Primary">
       <a href="#index">Index</a>
       <a href="#why">Why</a>
       <a href="#metrics">Metrics</a>
@@ -41,32 +41,29 @@
     <p class="muted">One view that compares models on contradiction risk. Lower is better.</p>
     <div class="table">
       <div class="t-row t-head">
-        <div>Model</div>
-        <div>Risk</div>
-        <div>Contradiction density</div>
-        <div>Status</div>
+        <div>Model</div><div>Risk</div><div>Contradiction density</div><div>Status</div>
       </div>
       <div class="t-row">
         <div>GPT-4</div>
-        <div class="risk">Low</div>
+        <div><span class="pill low">Low</span></div>
         <div>2.3%</div>
         <div>Preview</div>
       </div>
       <div class="t-row">
         <div>Claude-3.5</div>
-        <div class="risk">Low</div>
+        <div><span class="pill low">Low</span></div>
         <div>2.7%</div>
         <div>Preview</div>
       </div>
       <div class="t-row">
         <div>Gemini Pro</div>
-        <div class="risk">Medium</div>
+        <div><span class="pill medium">Medium</span></div>
         <div>4.1%</div>
         <div>Preview</div>
       </div>
       <div class="t-row">
         <div>LLaMA-3</div>
-        <div class="risk">Medium</div>
+        <div><span class="pill medium">Medium</span></div>
         <div>5.2%</div>
         <div>Preview</div>
       </div>
@@ -78,7 +75,7 @@
     <div>
       <h2>Why teams use Contradish</h2>
       <ul class="list">
-        <li><strong>Risk and compliance.</strong> Higher contradiction density signals liability and instability.</li>
+        <li><strong>Risk and compliance.</strong> A higher density of contradictions signals liability and instability.</li>
         <li><strong>External standard.</strong> A neutral score carries more weight than self reports.</li>
         <li><strong>Comparability.</strong> Track releases and compare against peers with one scale.</li>
         <li><strong>Actionable output.</strong> Maps show where contradictions cluster across prompts and policies.</li>
